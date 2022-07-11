@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B05F4D47-73E3-492E-92C1-7E0B5BCAFD58}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Cplantgame</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Cback.h" />
+    <ClInclude Include="Cgameapp.h" />
+    <ClInclude Include="Corse_all.h" />
+    <ClInclude Include="Cor_box.h" />
+    <ClInclude Include="CplantApp.h" />
+    <ClInclude Include="C_cor1.h" />
+    <ClInclude Include="C_cor2.h" />
+    <ClInclude Include="C_cor3.h" />
+    <ClInclude Include="die_box.h" />
+    <ClInclude Include="die_cor.h" />
+    <ClInclude Include="fl.h" />
+    <ClInclude Include="flbox.h" />
+    <ClInclude Include="ms.h" />
+    <ClInclude Include="msbox.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="shot.h" />
+    <ClInclude Include="shotbox.h" />
+    <ClInclude Include="sys.h" />
+    <ClInclude Include="wd.h" />
+    <ClInclude Include="wdbox.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Cback.cpp" />
+    <ClCompile Include="Corse_all.cpp" />
+    <ClCompile Include="Cor_box.cpp" />
+    <ClCompile Include="CplantApp.cpp" />
+    <ClCompile Include="Cwinmain.cpp" />
+    <ClCompile Include="C_cor1.cpp" />
+    <ClCompile Include="C_cor2.cpp" />
+    <ClCompile Include="C_cor3.cpp" />
+    <ClCompile Include="die_box.cpp" />
+    <ClCompile Include="die_cor.cpp" />
+    <ClCompile Include="fl.cpp" />
+    <ClCompile Include="flbox.cpp" />
+    <ClCompile Include="ms.cpp" />
+    <ClCompile Include="msbox.cpp" />
+    <ClCompile Include="shot.cpp" />
+    <ClCompile Include="shotbox.cpp" />
+    <ClCompile Include="wd.cpp" />
+    <ClCompile Include="wdbox.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Cplantgame4.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="cor3.bmp" />
+    <Image Include="res\background.bmp" />
+    <Image Include="res\cor22.bmp" />
+    <Image Include="res\cor3.bmp" />
+    <Image Include="res\cos.bmp" />
+    <Image Include="res\cs.bmp" />
+    <Image Include="res\feng.bmp" />
+    <Image Include="res\flower.bmp" />
+    <Image Include="res\fmj.bmp" />
+    <Image Include="res\ms.bmp" />
+    <Image Include="res\shot.bmp" />
+    <Image Include="res\wd.bmp" />
+    <Image Include="res\ys.bmp" />
+    <Image Include="res\ys2.bmp" />
+    <Image Include="res\ys3.bmp" />
+    <Image Include="res\zk.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
